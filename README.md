@@ -5,6 +5,7 @@ FEATURES
 ->Multiple Choice Questions: Each quiz consists of 10 questions with four answer options each.
 ->Timer: The application tracks the time taken by the user to complete the quiz.
 ->Results Display: At the end of the quiz, the user is shown their score along with the time taken to complete the quiz.
+
 USAGE
 ->Start the Quiz: Run the application to start the quiz.
 ->Answer Questions: Select the correct answer for each of the 10 multiple-choice questions.

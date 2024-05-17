@@ -1,5 +1,3 @@
-package JAVA;
-
 import javax.swing.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -37,7 +35,7 @@ public class Quiz extends JFrame implements ActionListener {
         timerLabel.setBounds(500, 10, 100, 20);
 
 
-
+//this for time counter
 
         timer = new Timer(1000, new ActionListener() {
             @Override
@@ -71,6 +69,8 @@ public class Quiz extends JFrame implements ActionListener {
         setSize(600, 350);
     }
 
+// here we are storing the questions and options in this section
+    
     void setData() {
         radioButton[3].setSelected(true);
         if (current == 0) {
@@ -136,6 +136,8 @@ public class Quiz extends JFrame implements ActionListener {
         }
     }
 
+//in this section we are checking the correct answers 
+    
     boolean checkAns() {
         if (current == 0) {
             return (radioButton[1].isSelected());
@@ -161,6 +163,8 @@ public class Quiz extends JFrame implements ActionListener {
         return false;
     }
 
+//here are creating the action for next and for submit button and also displaying the score achieved by user
+    
     @Override
     public void actionPerformed(ActionEvent e) {
         if (e.getSource() == nxtButton) {
